@@ -1,4 +1,8 @@
+// order matters
 @import "mixins/_variables.styl";
 @import "mixins/_global.styl";
-@import "mixins/_layout.styl";
-@import "mixins/_elements.styl";
+
+// order doesnt matter
+@import "mixins/layout/*.styl";
+@import "mixins/spacing/*.styl";
+@import "mixins/elements/*.styl";
