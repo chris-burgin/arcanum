@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid grey;
+    margin-top: margin-narrow;
+    margin-bottom: margin-narrow;
+    font-size: h6-size;
+    box-sizing: border-box;
+
+    &.half {
+      width: 49%;
+    }
+
+    &[type="submit"] {
+      border: none;
+      font-weight: heavy;
+      color: primary;
+      background-color: secondary;
+      cursor: pointer;
+      transition: .2s;
+
+      &.inverted {
+        background-color: primary;
+        color: secondary;
+      }
+
+      &.type2 {
+        background-color: white;
+        color: primary;
+        border: .1rem solid primary;
+      }
+    }
+
+    &[type="submit"]:hover {
+      background-color: primary;
+      color: secondary;
+
+      &.inverted {
+        background-color: secondary;
+        color: primary;
+      }
+
+      &.type2 {
+        border: .1rem solid secondary;
+        background-color: white;
+        color: secondary;
+      }
+    }
+
+
+  }
+}
