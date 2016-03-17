@@ -18,51 +18,54 @@
     <!-- Layout -->
     <!----------------------------------->
     <section class="site-width">
-      <h2> Layout </h2>
+      <h2 class=""> Layout </h2>
 
       <!----------------------------------->
       <!-- Flex Grid -->
       <!----------------------------------->
-      <h3 class="mb-n">  flex grid </h3>
-      <p class="mt-0"> A flex grid allows for infinate columns with a maximum of a 6:1
-          ratio. For example, a column with the class "column six” will take up
-          space equivelent to 6 columns and a column with the space "column two”
-          will take up space equivelent to 2 columns. </p>
+      <div>
+        <h3 class="mb-n bb-n">  Flex Grid </h3>
+        <p class="mt-0"> A flex grid allows for infinate columns with a maximum of a 6:1
+            ratio. For example, a column with the class "column six” will take up
+            space equivelent to 6 columns and a column with the space "column two”
+            will take up space equivelent to 2 columns. </p>
 
-      <!-- Example -->
-      <div class="row">
-        <div class="column">
+        <!-- Example -->
+        <div class="b-n rounded mt">
+          <div class="row p">
+            <div class="column">
 
-          <div class="row mtb">
-            <div class="column bcow mr p"> Column 1 </div>
-            <div class="column bcow p"> Column 2 </div>
+              <div class="row mtb">
+                <div class="column bcow mr p"> Column 1 </div>
+                <div class="column bcow p"> Column 2 </div>
+              </div>
+
+              <div class="row mtb">
+                <div class="column bcow mr p"> Column 1 </div>
+                <div class="column bcow mr p"> Column 2 </div>
+                <div class="column bcow mr p"> Column 3 </div>
+                <div class="column bcow p"> Column 4 </div>
+              </div>
+
+              <div class="row mtb">
+                <div class="column bcow mr p"> Column 1 </div>
+                <div class="column bcow mr p"> Column 2 </div>
+                <div class="column two bcow p"> Column 3 </div>
+              </div>
+
+              <div class="row mtb">
+                <div class="column bcow mr p"> Column 1 </div>
+                <div class="column six bcow p"> Column 2 </div>
+              </div>
+
+            </div>
           </div>
-
-          <div class="row mtb">
-            <div class="column bcow mr p"> Column 1 </div>
-            <div class="column bcow mr p"> Column 2 </div>
-            <div class="column bcow mr p"> Column 3 </div>
-            <div class="column bcow p"> Column 4 </div>
-          </div>
-
-          <div class="row mtb">
-            <div class="column bcow mr p"> Column 1 </div>
-            <div class="column bcow mr p"> Column 2 </div>
-            <div class="column two bcow p"> Column 3 </div>
-          </div>
-
-          <div class="row mtb">
-            <div class="column bcow mr p"> Column 1 </div>
-            <div class="column six bcow p"> Column 2 </div>
-          </div>
-
         </div>
-      </div>
 
-      <!-- Code Example -->
-      <div class="row b-n rounded cp">
-        <pre class="m-0 flex-cf">
-          <code class="h6">
+        <!-- Code Example -->
+        <div class="row b-n rounded cp mt bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
 
     &lt;div class="<span class="cs">row mtb</span>"&gt;
       &lt;div class="<span class="cs">column</span>"&gt; Column 1 &lt;/div&gt;
@@ -87,75 +90,49 @@
       &lt;div class="<span class="cs">column six</span>"&gt; Column 2 &lt;/div&gt;
     &lt;/div&gt;
 
-          </code>
-        </pre>
+            </code>
+          </pre>
+        </div>
       </div>
+
+      <!----------------------------------->
+      <!-- End Flex Grid -->
+      <!----------------------------------->
 
 
       <!----------------------------------->
       <!-- Flex Positioning -->
       <!----------------------------------->
+      <div>
+        <h3 class="mb-n mt-w fn bb-n"> Flex Positioning </h3>
+        <p class="m-0"> Flex Positioning allows up to move children elements to
+            diffrent locations inside their parent container. The
+            following example works in both column or row. </p>
 
-      <h3 class="mb-n mt-w fn"> flex positioning </h3>
-      <p class="m-0"> Flex Positioning allows up to move children elements to
-          diffrent locations inside their parent container. The
-          following example works in both column or row. </p>
+        <!----------------------------------->
+        <!-- Horizontal/Vertical Center -->
+        <!----------------------------------->
+        <h5 class="fn mt-w mb"> Horizontal/Vertical Center </h5>
 
-      <!----------------------------------->
-      <!-- Horizontal/Vertical Center -->
-      <!----------------------------------->
-      <h5 class="fl mt-w mb"> horizontal/vertical center </h5>
+        <!-- Example -->
+        <div class="b-n rounded mb">
+          <div class="column p">
+          	<div class="row flex-s">
+          		<span class="ptb plr-w rounded bcow"> start </span>
+          	</div>
+          	<div class="row flex-c">
+          		<span class="ptb plr-w rounded bcow"> center </span>
+          	</div>
+          	<div class="row flex-e">
+          		<span class="ptb plr-w rounded bcow"> end </span>
+          	</div>
+          </div>
+        </div>
 
-      <!-- Example -->
-      <div class="column pb">
-      	<div class="row flex-s">
-      		<span class="ptb plr-w rounded bcow"> start </span>
-      	</div>
-      	<div class="row flex-c">
-      		<span class="ptb plr-w rounded bcow"> center </span>
-      	</div>
-      	<div class="row flex-e">
-      		<span class="ptb plr-w rounded bcow"> end </span>
-      	</div>
-      </div>
-
-      <!-- Code Example -->
-      <div class="row b-n rounded cp">
-        <pre class="m-0 flex-cf">
-          <code class="h6">
-
-    &lt;div class="<span class="cs">column</span>"&gt;
-      &lt;div class="<span class="cs">row flex-s</span>"&gt;
-        &lt;span&gt; start &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="<span class="cs">row flex-c</span>"&gt;
-        &lt;span&gt; center &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="<span class="cs">row flex-e</span>"&gt;
-        &lt;span&gt; end &lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-          </code>
-        </pre>
-      </div>
-
-      <!----------------------------------->
-      <!-- Full Center -->
-      <!----------------------------------->
-      <h5 class="fl mt-w mb"> full center </h5>
-
-      <!-- Example -->
-      <div class="column pb">
-      	<div class="row flex-cf">
-      		<span class="ptb plr-w rounded bcow"> Full Centered </span>
-      	</div>
-      </div>
-
-      <!-- Code Example -->
-      <div class="row b-n rounded cp">
-        <pre class="m-0 flex-cf">
-          <code class="h6">
+        <!-- Code Example -->
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
 
     &lt;div class="<span class="cs">column</span>"&gt;
       &lt;div class="<span class="cs">row flex-s</span>"&gt;
@@ -169,33 +146,76 @@
       &lt;/div&gt;
     &lt;/div&gt;
 
-          </code>
-        </pre>
-      </div>
+            </code>
+          </pre>
+        </div>
+        <!----------------------------------->
+        <!-- END Horizontal/Vertical Center -->
+        <!----------------------------------->
 
-      <!----------------------------------->
-      <!-- Space -->
-      <!----------------------------------->
-      <h5 class="fl mt-w mb"> space </h5>
+        <!----------------------------------->
+        <!-- Full Center -->
+        <!----------------------------------->
+        <h5 class="fn mt-w mb"> Full Center </h5>
 
-      <!-- Example -->
-      <div class="column pb">
-      	<div class="row flex-space mb">
-      		<span class="ptb plr-w rounded bcow"> Left </span>
-          <span class="ptb plr-w rounded bcow"> Center </span>
-          <span class="ptb plr-w rounded bcow"> Right </span>
-      	</div>
-        <div class="row flex-space-a">
-          <span class="ptb plr-w rounded bcow"> Left </span>
-          <span class="ptb plr-w rounded bcow"> Center </span>
-          <span class="ptb plr-w rounded bcow"> Right </span>
-      	</div>
-      </div>
+        <!-- Example -->
+        <div class="b-n rounded mb">
+          <div class="column p">
+          	<div class="row flex-cf">
+          		<span class="ptb plr-w rounded bcow"> Full Centered </span>
+          	</div>
+          </div>
+        </div>
 
-      <!-- Code Example -->
-      <div class="row b-n rounded cp">
-        <pre class="m-0 flex-cf">
-          <code class="h6">
+        <!-- Code Example -->
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
+
+    &lt;div class="<span class="cs">column</span>"&gt;
+      &lt;div class="<span class="cs">row flex-s</span>"&gt;
+        &lt;span&gt; start &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="<span class="cs">row flex-c</span>"&gt;
+        &lt;span&gt; center &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="<span class="cs">row flex-e</span>"&gt;
+        &lt;span&gt; end &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+            </code>
+          </pre>
+        </div>
+        <!----------------------------------->
+        <!-- END Full Center -->
+        <!----------------------------------->
+
+        <!----------------------------------->
+        <!-- Space -->
+        <!----------------------------------->
+        <h5 class="fn mt-w mb"> Space </h5>
+
+        <!-- Example -->
+        <div class="b-n mb">
+          <div class="column p">
+          	<div class="row flex-space mb">
+          		<span class="ptb plr-w rounded bcow"> Left </span>
+              <span class="ptb plr-w rounded bcow"> Center </span>
+              <span class="ptb plr-w rounded bcow"> Right </span>
+          	</div>
+            <div class="row flex-space-a">
+              <span class="ptb plr-w rounded bcow"> Left </span>
+              <span class="ptb plr-w rounded bcow"> Center </span>
+              <span class="ptb plr-w rounded bcow"> Right </span>
+          	</div>
+          </div>
+        </div>
+
+        <!-- Code Example -->
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
 
     &lt;div class="<span class="cs">row flex-space</span>"&gt;
       &lt;span class="ptb plr-w rounded bcow"&gt; Left &lt;/span&gt;
@@ -210,27 +230,45 @@
     &lt;/div&gt;
     &lt;/div&gt;
 
-          </code>
-        </pre>
+            </code>
+          </pre>
+        </div>
+        <!----------------------------------->
+        <!-- END Space -->
+        <!----------------------------------->
       </div>
+      <!----------------------------------->
+      <!-- END Flex Positioning -->
+      <!----------------------------------->
 
       <!----------------------------------->
       <!-- Misc -->
       <!----------------------------------->
-      <h3 class="mb-n mt-w fn"> misc </h3>
+      <h3 class="mb-n mt-w fn bb-n"> Misc </h3>
 
       <!----------------------------------->
       <!-- Wrappers -->
       <!----------------------------------->
-      <h5 class="fl mt-w mb"> wrappers </h5>
+      <h5 class="fn mt-w mb"> Wrappers </h5>
       <!-- Code Example -->
-      <div class="row b-n rounded cp">
+      <div class="row b-n rounded cp bcow">
         <pre class="m-0 flex-cf">
           <code class="h6">
 
-    &lt;div class="<span class="cs">site-width</span> "&gt; &lt;/div&gt;
-    &lt;div class="<span class="cs">site-width-narrow</span>"&gt; &lt;/div&gt;
-    &lt;div class="<span class="cs">site-width-full</span>"&gt; &lt;/div&gt;
+    .site-width {
+      margin: 0 auto;
+      max-width: width-common;
+    }
+
+    .site-width-narrow {
+      margin: 0 auto;
+      max-width: width-narrow;
+    }
+
+    .site-width-full {
+      margin: 0 auto;
+      max-width: width-full;
+    }
 
           </code>
         </pre>
@@ -239,24 +277,338 @@
       <!----------------------------------->
       <!-- Overflow -->
       <!----------------------------------->
-      <h5 class="fl mt-w mb"> overflow </h5>
+      <h5 class="fn mt-w mb"> Overflow </h5>
       <!-- Code Example -->
-      <div class="row b-n rounded cp">
+      <div class="row b-n rounded cp bcow">
         <pre class="m-0 flex-cf">
           <code class="h6">
 
-    &lt;div class="<span class="cs">overflow-hidden</span>"&gt; &lt;/div&gt;
-    &lt;div class="<span class="cs">overflow-scroll</span>"&gt; &lt;/div&gt;
-    &lt;div class="<span class="cs">overflow-scroll-x</span>"&gt; &lt;/div&gt;
-    &lt;div class="<span class="cs">overflow-scroll-y</span>"&gt; &lt;/div&gt;
+    .overflow-hidden { overflow: hidden; }
+    .overflow-scroll { overflow: scroll; }
+    .overflow-scroll-x { overflow-x: scroll; }
+    .overflow-scroll-y { overflow-y: scroll; }
 
           </code>
         </pre>
       </div>
 
 
+    <!----------------------------------->
+    <!-- Spacing -->
+    <!----------------------------------->
+
+      <h3 class="mt-w fn bb-n"> Spacing </h2>
+      <h5 class="mb-n mt fn"> Margin</h5>
+      <div class="row b-n rounded cp bcow">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    // Single Side
+    .m  { margin: margin-default; }
+    .mt { margin-top: margin-default; }
+    .mb { margin-bottom: margin-default; }
+    .ml { margin-left: margin-default; }
+    .mr { margin-right: margin-default; }
+
+    .m-n  { margin: margin-narrow;}
+    .mt-n { margin-top: margin-narrow; }
+    .mb-n { margin-bottom: margin-narrow; }
+    .ml-n { margin-left: margin-narrow; }
+    .mr-n { margin-right: margin-narrow; }
+
+    .m-w  { margin: margin-wide; }
+    .mt-w { margin-top: margin-wide; }
+    .mb-w { margin-bottom: margin-wide; }
+    .ml-w { margin-left: margin-wide; }
+    .mr-w { margin-right: margin-wide; }
+
+    .m-0  { margin: 0; }
+    .mt-0 { margin-top: 0; }
+    .mb-0 { margin-bottom: 0; }
+    .ml-0 { margin-left: 0; }
+    .mr-0 { margin-right: 0; }
+
+    // Multiple Sides
+    .mtb { margin-top: margin-default; margin-bottom: margin-default; }
+    .mlr { margin-left: margin-default; margin-right: margin-default; }
+
+    .mtb-n { margin-top: margin-narrow; margin-bottom: margin-narrow; }
+    .mlr-n { margin-left: margin-narrow; margin-right: margin-narrow; }
+
+    .mtb-w { margin-top: margin-wide; margin-bottom: margin-wide; }
+    .mlr-w { margin-left: margin-wide; margin-right: margin-wide; }
+
+
+          </code>
+        </pre>
+      </div>
+
+
+      <h5 class="mb-n mt-w fn"> Padding</h5>
+      <div class="row b-n rounded cp bcow">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    // single side
+    .p  { padding: padding-default; }
+    .pt { padding-top: padding-default; }
+    .pb { padding-bottom: padding-default; }
+    .pl { padding-left: padding-default; }
+    .pr { padding-right: padding-default; }
+
+    .p-n  { padding: padding-narrow;}
+    .pt-n { padding-top: padding-narrow; }
+    .pb-n { padding-bottom: padding-narrow; }
+    .pl-n { padding-left: padding-narrow; }
+    .pr-n { padding-right: padding-narrow; }
+
+    .p-w  { padding: padding-wide; }
+    .pt-w { padding-top: padding-wide; }
+    .pb-w { padding-bottom: padding-wide; }
+    .pl-w { padding-left: padding-wide; }
+    .pr-w { padding-right: padding-wide; }
+
+    .p-0  { padding: 0; }
+    .pt-0 { padding-top: 0; }
+    .pb-0 { padding-bottom: 0; }
+    .pl-0 { padding-left: 0; }
+    .pr-0 { padding-right: 0; }
+
+    // multiple side
+    .ptb { padding-top: padding-default; padding-bottom: padding-default; }
+    .plr { padding-left: padding-default; padding-right: padding-default; }
+
+    .ptb-n { padding-top: padding-narrow; padding-bottom: padding-narrow; }
+    .plr-n { padding-left: padding-narrow; padding-right: padding-narrow; }
+
+    .ptb-w { padding-top: padding-wide; padding-bottom: padding-wide; }
+    .plr-w { padding-left: padding-wide; padding-right: padding-wide; }
+
+          </code>
+        </pre>
+      </div>
+
+      <h5 class="mb-n mt-w fn"> Border</h5>
+      <div class="row b-n rounded cp bcow">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    // single side
+    .b  { border: border-default solid; }
+    .bt { border-top: border-default solid; }
+    .bb { border-bottom: border-default solid; }
+    .bl { border-left: border-default solid; }
+    .br { border-right: border-default solid; }
+
+    .b-n  { border: border-narrow solid; }
+    .bt-n { border-top: border-narrow solid; }
+    .bb-n { border-bottom: border-narrow solid; }
+    .bl-n { border-left: border-narrow solid; }
+    .br-n { border-right: border-narrow solid; }
+
+    .b-w  { border: border-wide solid; }
+    .bt-w { border-top: border-wide solid; }
+    .bb-w { border-bottom: border-wide solid; }
+    .bl-w { border-left: border-wide solid; }
+    .br-w { border-right: border-wide solid; }
+
+    .b-0  { border: 0; }
+    .bt-0 { border-top: 0; }
+    .bb-0 { border-bottom: 0; }
+    .bl-0 { border-left: 0; }
+    .br-0 { border-right: 0; }
+
+    // multiple sides
+    .btb { border-top: border-default; border-bottom: border-default; }
+    .blr { border-left: border-default; border-right: border-default; }
+
+    .btb-n { border-top: border-narrow; border-bottom: border-narrow; }
+    .blr-n { border-left: border-narrow; border-right: border-narrow; }
+
+    .btb-w { border-top: border-wide; border-bottom: border-wide; }
+    .blr-w { border-left: border-wide; border-right: border-wide; }
+
+    // rounded
+    .rounded   { border-radius: border-radius; }
+    .rounded-t { border-radius: border-radius, border-radius, 0, 0; }
+    .rounded-b { border-radius: 0, 0, border-radius, border-radius; }
+    .rounded-l { border-radius: border-radius, 0, 0, border-radius; }
+    .rounded-r { border-radius: 0, border-radius, border-radius, 0; }
+
+    // circle
+    .circle { border-radius: 50%; }
+
+          </code>
+        </pre>
+      </div>
     </section>
 
+    <!----------------------------------->
+    <!-- END Layout -->
+    <!----------------------------------->
+    <hr class="site-width mt-w">
+    <!----------------------------------->
+    <!-- START Elements -->
+    <!----------------------------------->
+    <section class="site-width">
+      <h2 class="mt-w"> Elements </h2>
 
+      <!----------------------------------->
+      <!-- START Headers -->
+      <!----------------------------------->
+      <div>
+        <h3 class="mt-w fn bb-n"> Headers </h2>
+        <!-- Example -->
+        <div class="b-n rounded mb">
+          <h1 class="pl"> Header 1 </h1>
+          <h2 class="pl"> Header 2 </h2>
+          <h3 class="pl"> Header 3 </h3>
+          <h4 class="pl"> Header 4 </h4>
+          <h5 class="pl"> Header 5 </h5>
+          <h6 class="pl"> Header 6 </h6>
+        </div>
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
+
+    h1, h2, h3, h4, h5, h6 { font-family: font-header; font-weight: heavy; }
+
+    h1 { font-size: h1-size; }
+    h2 { font-size: h2-size; }
+    h3 { font-size: h3-size; }
+    h4 { font-size: h4-size; }
+    h5 { font-size: h5-size; }
+    h6 { font-size: h6-size; }
+
+            </code>
+          </pre>
+        </div>
+
+      </div>
+      <!----------------------------------->
+      <!-- END Headers -->
+      <!----------------------------------->
+
+      <!----------------------------------->
+      <!-- Start Fonts -->
+      <!----------------------------------->
+      <div>
+        <h3 class="mt-w fn bb-n"> Fonts </h2>
+
+          <!----------------------------------->
+          <!-- Start Font Family -->
+          <!----------------------------------->
+        <h5 class="mb-n mt-w fn"> Font Family</h5>
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
+
+    .hf { font-family: header-font; }
+    .bf { font-family: font-body; }
+
+            </code>
+          </pre>
+        </div>
+        <!----------------------------------->
+        <!-- END Font Family -->
+        <!----------------------------------->
+
+        <!----------------------------------->
+        <!-- Start Font Size -->
+        <!----------------------------------->
+        <h5 class="mb-n mt-w fn"> Font Size</h5>
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
+
+    .h1 { font-size: h1-size; }
+    .h2 { font-size: h2-size; }
+    .h3 { font-size: h3-size; }
+    .h4 { font-size: h4-size; }
+    .h5 { font-size: h5-size; }
+    .h6 { font-size: h6-size; }
+
+            </code>
+          </pre>
+        </div>
+        <!----------------------------------->
+        <!-- END Font Size -->
+        <!----------------------------------->
+
+        <!----------------------------------->
+        <!-- Start Font Weight -->
+        <!----------------------------------->
+        <h5 class="mb-n mt-w fn"> Font Weight </h5>
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
+
+    .fl { font-weight: light; }
+    .fn { font-weight: normal; }
+    .fh { font-weight: heavy; }
+
+            </code>
+          </pre>
+        </div>
+        <!----------------------------------->
+        <!-- END Font Weight -->
+        <!----------------------------------->
+      </div>
+      <!----------------------------------->
+      <!-- END Fonts -->
+      <!----------------------------------->
+
+      <!----------------------------------->
+      <!-- Start Lists -->
+      <!----------------------------------->
+      <div>
+        <h3 class="mt-w fn bb-n"> Lists </h2>
+
+          <!----------------------------------->
+          <!-- Start List Resets -->
+          <!----------------------------------->
+        <h5 class="mb-n mt-w fn"> List Resets </h5>
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
+
+    l-plain { list-style: none; }
+    l-flat { display: flex; }
+
+            </code>
+          </pre>
+        </div>
+        <!----------------------------------->
+        <!-- END List Resets -->
+        <!----------------------------------->
+
+        <!----------------------------------->
+        <!-- Start List Styles -->
+        <!----------------------------------->
+      <h5 class="mb-n mt-w fn"> List Styles </h5>
+      <div class="row b-n rounded cp bcow">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    l-circle { list-style-type: circle; }
+    l-square { list-style-type: square; }
+    l-roman { list-style-type: upper-roman; }
+    l-alpha { list-style-type: lower-alpha; }
+
+          </code>
+        </pre>
+      </div>
+      <!----------------------------------->
+      <!-- END List Styles -->
+      <!----------------------------------->
+
+      </div>
+      <!----------------------------------->
+      <!-- END Lists -->
+      <!----------------------------------->
+    </section>
+    <!----------------------------------->
+    <!-- END Elements -->
+    <!----------------------------------->
   </body>
 </html>
