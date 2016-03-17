@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>arcanum - css library</title>
+    <link rel="stylesheet" href="../dist/main.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="pb">
+    <header class="bcp">
+      <div class="site-width ptb-w">
+        <h1 class="m-0 cw"> arcanum </h1>
+        <span class="cs"> css library </span>
+      </div>
+    </header>
+
+    <!----------------------------------->
+    <!-- Layout -->
+    <!----------------------------------->
+    <section class="site-width">
+      <h2> Layout </h2>
+
+      <!----------------------------------->
+      <!-- Flex Grid -->
+      <!----------------------------------->
+      <h3 class="mb-n">  flex grid </h3>
+      <p class="mt-0"> A flex grid allows for infinate columns with a maximum of a 6:1
+          ratio. For example, a column with the class "column six” will take up
+          space equivelent to 6 columns and a column with the space "column two”
+          will take up space equivelent to 2 columns. </p>
+
+      <!-- Example -->
+      <div class="row">
+        <div class="column">
+
+          <div class="row mtb">
+            <div class="column bcow mr p"> Column 1 </div>
+            <div class="column bcow p"> Column 2 </div>
+          </div>
+
+          <div class="row mtb">
+            <div class="column bcow mr p"> Column 1 </div>
+            <div class="column bcow mr p"> Column 2 </div>
+            <div class="column bcow mr p"> Column 3 </div>
+            <div class="column bcow p"> Column 4 </div>
+          </div>
+
+          <div class="row mtb">
+            <div class="column bcow mr p"> Column 1 </div>
+            <div class="column bcow mr p"> Column 2 </div>
+            <div class="column two bcow p"> Column 3 </div>
+          </div>
+
+          <div class="row mtb">
+            <div class="column bcow mr p"> Column 1 </div>
+            <div class="column six bcow p"> Column 2 </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Code Example -->
+      <div class="row b-n rounded cp">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    &lt;div class="<span class="cs">row mtb</span>"&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 1 &lt;/div&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 2 &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="<span class="cs">row</span>"&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 1 &lt;/div&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 2 &lt;/div&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 3 &lt;/div&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 4 &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="<span class="cs">row</span>"&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 1 &lt;/div&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 2 &lt;/div&gt;
+      &lt;div class="<span class="cs">column two</span>"&gt; Column 3 &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="<span class="cs">row</span>"&gt;
+      &lt;div class="<span class="cs">column</span>"&gt; Column 1 &lt;/div&gt;
+      &lt;div class="<span class="cs">column six</span>"&gt; Column 2 &lt;/div&gt;
+    &lt;/div&gt;
+
+          </code>
+        </pre>
+      </div>
+
+
+      <!----------------------------------->
+      <!-- Flex Positioning -->
+      <!----------------------------------->
+
+      <h3 class="mb-n mt-w fn"> flex positioning </h3>
+      <p class="m-0"> Flex Positioning allows up to move children elements to
+          diffrent locations inside their parent container. The
+          following example works in both column or row. </p>
+
+      <!----------------------------------->
+      <!-- Horizontal/Vertical Center -->
+      <!----------------------------------->
+      <h5 class="fl mt-w mb"> horizontal/vertical center </h5>
+
+      <!-- Example -->
+      <div class="column pb">
+      	<div class="row flex-s">
+      		<span class="ptb plr-w rounded bcow"> start </span>
+      	</div>
+      	<div class="row flex-c">
+      		<span class="ptb plr-w rounded bcow"> center </span>
+      	</div>
+      	<div class="row flex-e">
+      		<span class="ptb plr-w rounded bcow"> end </span>
+      	</div>
+      </div>
+
+      <!-- Code Example -->
+      <div class="row b-n rounded cp">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    &lt;div class="<span class="cs">column</span>"&gt;
+      &lt;div class="<span class="cs">row flex-s</span>"&gt;
+        &lt;span&gt; start &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="<span class="cs">row flex-c</span>"&gt;
+        &lt;span&gt; center &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="<span class="cs">row flex-e</span>"&gt;
+        &lt;span&gt; end &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+          </code>
+        </pre>
+      </div>
+
+      <!----------------------------------->
+      <!-- Full Center -->
+      <!----------------------------------->
+      <h5 class="fl mt-w mb"> full center </h5>
+
+      <!-- Example -->
+      <div class="column pb">
+      	<div class="row flex-cf">
+      		<span class="ptb plr-w rounded bcow"> Full Centered </span>
+      	</div>
+      </div>
+
+      <!-- Code Example -->
+      <div class="row b-n rounded cp">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    &lt;div class="<span class="cs">column</span>"&gt;
+      &lt;div class="<span class="cs">row flex-s</span>"&gt;
+        &lt;span&gt; start &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="<span class="cs">row flex-c</span>"&gt;
+        &lt;span&gt; center &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="<span class="cs">row flex-e</span>"&gt;
+        &lt;span&gt; end &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+          </code>
+        </pre>
+      </div>
+
+      <!----------------------------------->
+      <!-- Space -->
+      <!----------------------------------->
+      <h5 class="fl mt-w mb"> space </h5>
+
+      <!-- Example -->
+      <div class="column pb">
+      	<div class="row flex-space mb">
+      		<span class="ptb plr-w rounded bcow"> Left </span>
+          <span class="ptb plr-w rounded bcow"> Center </span>
+          <span class="ptb plr-w rounded bcow"> Right </span>
+      	</div>
+        <div class="row flex-space-a">
+          <span class="ptb plr-w rounded bcow"> Left </span>
+          <span class="ptb plr-w rounded bcow"> Center </span>
+          <span class="ptb plr-w rounded bcow"> Right </span>
+      	</div>
+      </div>
+
+      <!-- Code Example -->
+      <div class="row b-n rounded cp">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    &lt;div class="<span class="cs">row flex-space</span>"&gt;
+      &lt;span class="ptb plr-w rounded bcow"&gt; Left &lt;/span&gt;
+      &lt;span class="ptb plr-w rounded bcow"&gt; Center &lt;/span&gt;
+      &lt;span class="ptb plr-w rounded bcow"&gt; Right &lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class="<span class="cs">row flex-space-a</span>"&gt;
+      &lt;span class="ptb plr-w rounded bcow"&gt; Left &lt;/span&gt;
+      &lt;span class="ptb plr-w rounded bcow"&gt; Center &lt;/span&gt;
+      &lt;span class="ptb plr-w rounded bcow"&gt; Right &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+          </code>
+        </pre>
+      </div>
+
+      <!----------------------------------->
+      <!-- Misc -->
+      <!----------------------------------->
+      <h3 class="mb-n mt-w fn"> misc </h3>
+
+      <!----------------------------------->
+      <!-- Wrappers -->
+      <!----------------------------------->
+      <h5 class="fl mt-w mb"> wrappers </h5>
+      <!-- Code Example -->
+      <div class="row b-n rounded cp">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    &lt;div class="<span class="cs">site-width</span> "&gt; &lt;/div&gt;
+    &lt;div class="<span class="cs">site-width-narrow</span>"&gt; &lt;/div&gt;
+    &lt;div class="<span class="cs">site-width-full</span>"&gt; &lt;/div&gt;
+
+          </code>
+        </pre>
+      </div>
+
+      <!----------------------------------->
+      <!-- Overflow -->
+      <!----------------------------------->
+      <h5 class="fl mt-w mb"> overflow </h5>
+      <!-- Code Example -->
+      <div class="row b-n rounded cp">
+        <pre class="m-0 flex-cf">
+          <code class="h6">
+
+    &lt;div class="<span class="cs">overflow-hidden</span>"&gt; &lt;/div&gt;
+    &lt;div class="<span class="cs">overflow-scroll</span>"&gt; &lt;/div&gt;
+    &lt;div class="<span class="cs">overflow-scroll-x</span>"&gt; &lt;/div&gt;
+    &lt;div class="<span class="cs">overflow-scroll-y</span>"&gt; &lt;/div&gt;
+
+          </code>
+        </pre>
+      </div>
+
+
+    </section>
+
+
+  </body>
+</html>
