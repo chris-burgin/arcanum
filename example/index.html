@@ -10,7 +10,7 @@
     <header class="bcp">
       <div class="site-width ptb-w">
         <h1 class="m-0 cw"> arcanum </h1>
-        <span class="cs"> css library </span>
+        <span class="cs h5 fl"> css library </span>
       </div>
     </header>
 
@@ -31,7 +31,7 @@
             will take up space equivelent to 2 columns. </p>
 
         <!-- Example -->
-        <div class="b-n rounded mt">
+        <div class="b-n rounded mt md-hide">
           <div class="row p">
             <div class="column">
 
@@ -115,7 +115,7 @@
         <h5 class="fn mt-w mb"> Horizontal/Vertical Center </h5>
 
         <!-- Example -->
-        <div class="b-n rounded mb">
+        <div class="b-n rounded mb md-hide">
           <div class="column p">
           	<div class="row flex-s">
           		<span class="ptb plr-w rounded bcow"> start </span>
@@ -159,7 +159,7 @@
         <h5 class="fn mt-w mb"> Full Center </h5>
 
         <!-- Example -->
-        <div class="b-n rounded mb">
+        <div class="b-n rounded mb md-hide">
           <div class="column p">
           	<div class="row flex-cf">
           		<span class="ptb plr-w rounded bcow"> Full Centered </span>
@@ -197,7 +197,7 @@
         <h5 class="fn mt-w mb"> Space </h5>
 
         <!-- Example -->
-        <div class="b-n mb">
+        <div class="b-n mb md-hide">
           <div class="column p">
           	<div class="row flex-space mb">
           		<span class="ptb plr-w rounded bcow"> Left </span>
@@ -487,6 +487,55 @@
       </div>
       <!----------------------------------->
       <!-- END Headers -->
+      <!----------------------------------->
+
+      <!----------------------------------->
+      <!-- START text -->
+      <!----------------------------------->
+      <div>
+        <h3 class="mt-w fn bb-n md-hide"> Text </h2>
+        <!-- Example -->
+        <div class="b-n rounded mb p">
+          <div class="h4 t-center t-caps t-underline pb"> text center uppercase underlined </div>
+          <div class="h4 t-right t-upper t-strike pb"> text right caps strike </div>
+          <div class="h4 t-left t-lower t-italics"> Text Left Lower Italic </div>
+        </div>
+        <div class="row b-n rounded cp bcow">
+          <pre class="m-0 flex-cf">
+            <code class="h6">
+
+    // align
+    .t-center { text-align: center; }
+    .t-right { text-align: right; }
+    .t-left { text-align: left; }
+    .t-justify { text-align: justify; }
+
+
+    // transform
+    .t-caps { text-transform: capitalize; }
+    .t-upper { text-transform: uppercase; }
+    .t-lower { text-transform: lowercase;}
+
+    // decoration
+    .t-none { text-decoration: none; }
+    .t-underline { text-decoration: underline; }
+    .t-strike { text-decoration:line-through; }
+    .t-italics { font-style: italic; }
+
+
+    // breaks
+    .t-break {
+      word-break: break-all;
+      hyphens: auto;
+    }
+
+            </code>
+          </pre>
+        </div>
+
+      </div>
+      <!----------------------------------->
+      <!-- END text -->
       <!----------------------------------->
 
       <!----------------------------------->
