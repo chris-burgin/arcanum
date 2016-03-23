@@ -24,5 +24,8 @@ gulp.task('watch', function() {
     gulp.watch('src/**/**.styl', ['stylus']);
 });
 
+// run 'gulp test'
+gulp.task('test', ['stylus']);
+
 // Default gulp task that runs when you 'gulp'
 gulp.task('default', ['stylus']);
