@@ -21,6 +21,7 @@ gulp.task('stylus', function() {
 
 // run 'gulp watch'
 gulp.task('watch', function() {
+    console.log('Stylus Build Attempt...')
     gulp.watch('src/**/**.styl', ['stylus']);
 });
 
